@@ -9,13 +9,13 @@ package fengjun.mi;
  */
 public class BeanDefinition {
 
-    private final Object bean;
+    private final Object beanClass;
 
     public BeanDefinition(Object object) {
-        this.bean = object;
+        this.beanClass = object;
     }
 
-    public Object getBean() {
-        return bean;
+    public Class<?> getBeanClass() {
+        return (Class<?>) beanClass;
     }
 }
